@@ -22,7 +22,7 @@ async function run() {
         console.log(`Is the current date on a week biweekly schedule from ${referenceDate}? ${isBiweekly}`);
     } catch (error) {
         const ERROR = <Error>error
-        core.setFailed(`Action failed with error: ${ERROR.message}`);
+        core.setFailed(`Action failed with error: ${ERROR.message}.`);
     }
 }
 

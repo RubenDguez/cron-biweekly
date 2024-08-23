@@ -24979,7 +24979,7 @@ async function run() {
     }
     catch (error) {
         const ERROR = error;
-        core.setFailed(`Action failed with error: ${ERROR.message}`);
+        core.setFailed(`Action failed with error: ${ERROR.message}.`);
     }
 }
 run();
