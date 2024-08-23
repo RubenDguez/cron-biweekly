@@ -1,0 +1,20 @@
+name: 'Biweekly Date Checker'
+description: 'Check if the current date is biweekly from a given date.'
+author: 'Argenis Ruben Dominguez'
+
+inputs:
+  reference-date:
+    description: 'The reference date in YYYY-MM-DD format.'
+    required: true
+
+outputs:
+  is-biweekly:
+    description: 'True if the current date is biweekly from the reference date, false otherwise.'
+
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+
+branding:
+  icon: 'calendar'
+  color: 'blue'
